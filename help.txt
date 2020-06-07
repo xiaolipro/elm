@@ -1,0 +1,27 @@
+一级目录：
+build和config目录是关于webpack的一些配置
+node_modules是npm安装的依赖代码库
+src文件夹存放项目源码
+static目录存放一些项目中的静态资源
+文件：
+.babelrc：设置转码的规则和插件的,用于将es6编译为es5
+.editorconfig：编辑器的相关配置
+.eslintignore：忽略语法检查的目录文件
+.eslintrc.js：eslint的配置文件,配置一些语法规则
+.gitignore：不想上传到gitrepo的文件
+.postcssrc.js：为不同浏览器兼容
+index.html：入口页面
+package.json：项目的配置文件
+    script-运行命令脚本
+    dependencies-生产环境的依赖
+        ^：最低安装版本
+    devDependencies-开发环境的依赖
+README.md：项目的描述
+
+3.x的vue.cli 已经放弃了dev-server.js，只需在webpack.dev.conf.js配置就行。
+
+组件设计原则：就近维护
+    将与组件相关的内容放在同一目录下，对外隔离，有利于代码维护
+
+
+Props，methods,data和computed的初始化都是在beforeCreated和created之间完成的。

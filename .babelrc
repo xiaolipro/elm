@@ -1,0 +1,15 @@
+// 通过babel将ES6语法编译成ES5
+
+{
+  "presets": [ // 预设
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2" // stage-x 代表stage-x 到 stage3 也就是数字越小包含越多
+  ],
+  "plugins": ["transform-vue-jsx", "transform-runtime"], // 一些插件
+  "comments": false // 编译后代码不生成注释,默认是true
+}

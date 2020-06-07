@@ -1,0 +1,11 @@
+# 该文件是编辑器的一些配置
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf # lf是linux和mac的换行风格, windows是crlf
+insert_final_newline = true # 创建一个文件自动在文件末尾插入一个新行
+trim_trailing_whitespace = true # 自动移除行尾多余空格
